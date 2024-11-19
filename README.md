@@ -1,5 +1,5 @@
 # 💫 About Me:
-Je travaille actuellement sur un Projet de jeux Quoridors,<br>J'apprécie travailler en équipe,<br>Vous pouvez me joindre via mon Email:Thomasbanderas06@gmail.com<br>Je suis étudiant a l'IUT informatique de Sophia
+Je travaille actuellement sur un Projet de jeux Quoridors,<br>J'apprécie travailler en équipe,<br>Vous pouvez me joindre par mail : <a href='mailto:Thomasbanderas06@gmail.com'>Thomasbanderas06@gmail.com<br>Étudiant a l'IUT de Sophia en developpement d'application
 
 
 ## 🌐 Socials:
@@ -14,9 +14,6 @@ Je travaille actuellement sur un Projet de jeux Quoridors,<br>J'apprécie travai
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=Tiretinium&theme=radical&no-frame=false&no-bg=false&margin-w=4)
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Tiretinium&limit=5&theme=dark&combine_all_yearly_contributions=true)
