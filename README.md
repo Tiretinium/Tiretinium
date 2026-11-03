@@ -17,7 +17,6 @@
 
 -  Étudiant en **BUT Informatique (3ᵉ année)** à l'IUT Nice Côte d'Azur, Sophia Antipolis
 -  En **alternance chez Thales DMS**
--  J'aime travailler en équipe et écrire du code propre et maintenable
 -  Me contacter : **Thomasbanderas06@gmail.com**
 
 ## Compétences
@@ -28,7 +27,7 @@
 
 **Frameworks & bibliothèques**
 
-<img src="https://skillicons.dev/icons?i=spring,nodejs,express,react,vue,angular,laravel,tailwind&perline=14" />
+<img src="https://skillicons.dev/icons?i=spring,nodejs,express,react,vue,tailwind&perline=14" />
 
 **Bases de données**
 
@@ -36,11 +35,11 @@
 
 **DevOps & systèmes**
 
-<img src="https://skillicons.dev/icons?i=git,github,gitlab,docker,kubernetes,jenkins,linux,ubuntu,debian,windows&perline=14" />
+<img src="https://skillicons.dev/icons?i=git,github,gitlab,docker,kubernetes,linux,ubuntu,debian,windows&perline=14" />
 
 **Outils**
 
-<img src="https://skillicons.dev/icons?i=maven,gradle,idea,vscode,visualstudio,androidstudio,postman,figma,md&perline=11" />
+<img src="https://skillicons.dev/icons?i=maven,gradle,idea,vscode,androidstudio,postman,figma,md&perline=11" />
 
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white)
 ![Apache](https://img.shields.io/badge/Apache-D42029?style=flat-square&logo=apache&logoColor=white)
