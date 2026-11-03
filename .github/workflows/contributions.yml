@@ -1,0 +1,35 @@
+name: Contributions graph
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/contrib_graph.py"
+      - ".github/workflows/contributions.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate graph
+        run: python scripts/contrib_graph.py ${{ github.repository_owner }} assets/contributions.svg
+
+      - name: Commit & push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add assets/contributions.svg
+          git diff --cached --quiet || git commit -m "chore: update contributions graph"
+          git push
