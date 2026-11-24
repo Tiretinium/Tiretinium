@@ -70,7 +70,7 @@ else:
         data = {"level": s.trophy_level, "progress": s.progress, "platinum": e.platinum, "gold": e.gold, "silver": e.silver, "bronze": e.bronze}
     except Exception as ex:
         print(f"PSN indisponible ({type(ex).__name__}: {ex})")
-        if not OUT.exists():
+        if not OUT.exists() or "EN ATTENTE" in OUT.read_text(encoding="utf-8"):
             OUT.write_text(waiting("SIGNAL PSN PERDU · JETON À RENOUVELER"), encoding="utf-8")
         sys.exit(0)
 

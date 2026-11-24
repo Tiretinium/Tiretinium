@@ -81,7 +81,7 @@ try:
     games = load_games()
 except Exception as e:  # jeton expiré, API modifiée, réseau...
     print(f"PSN indisponible ({type(e).__name__}: {e})")
-    if not OUT.exists():
+    if not OUT.exists() or "EN ATTENTE" in OUT.read_text(encoding="utf-8"):
         OUT.write_text(waiting("SIGNAL PSN PERDU · JETON À RENOUVELER"), encoding="utf-8")
     sys.exit(0)
 
