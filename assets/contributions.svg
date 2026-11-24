@@ -4,7 +4,7 @@
     .t { font-size: 15px; font-weight: 600; fill: #3dff86; }
   </style>
   <rect x=".5" y=".5" width="874" height="210" rx="10" fill="#06100a" stroke="#1d7a43"/>
-  <text class="t" x="52" y="28">156 contributions sur les 12 derniers mois</text>
+  <text class="t" x="52" y="28">158 contributions sur les 12 derniers mois</text>
   <text x="82" y="52">Déc</text><text x="142" y="52">Jan</text><text x="202" y="52">Fév</text><text x="262" y="52">Mar</text><text x="337" y="52">Avr</text><text x="397" y="52">Mai</text><text x="472" y="52">Juin</text><text x="532" y="52">Juil</text><text x="592" y="52">Août</text><text x="667" y="52">Sep</text><text x="727" y="52">Oct</text><text x="787" y="52">Nov</text>
   <text x="42" y="87" text-anchor="end">Lun</text>
   <text x="42" y="117" text-anchor="end">Mer</text>
