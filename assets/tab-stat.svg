@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64">
+  <defs>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>text { font-family: 'Courier New', 'DejaVu Sans Mono', Menlo, Consolas, monospace; fill: #3dff86; } .dim { fill: #1d7a43; } .b { font-weight: 700; }</style>
+  </defs>
+  <g filter="url(#glow)"><path d="M24,48 L90.0,48 L90.0,8 L246.0,8 L246.0,48 L1176,48" fill="none" stroke="#3dff86" stroke-width="2"/><text x="168.0" y="30" font-size="22" text-anchor="middle" class="b" letter-spacing="3">STAT</text><text x="384.0" y="30" font-size="18" text-anchor="middle" class="dim" letter-spacing="3">INV</text><text x="600.0" y="30" font-size="18" text-anchor="middle" class="dim" letter-spacing="3">DATA</text><text x="816.0" y="30" font-size="18" text-anchor="middle" class="dim" letter-spacing="3">MAP</text><text x="1032.0" y="30" font-size="18" text-anchor="middle" class="dim" letter-spacing="3">RADIO</text></g>
+</svg>

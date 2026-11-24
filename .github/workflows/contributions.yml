@@ -1,4 +1,4 @@
-name: Contributions graph
+name: Profile data
 
 on:
   schedule:
@@ -8,6 +8,14 @@ on:
     branches: [main]
     paths:
       - "scripts/contrib_graph.py"
+      - "scripts/xp_bar.py"
+      - "scripts/transmissions.py"
+      - "scripts/stats.py"
+      - "scripts/psn_games.py"
+      - "scripts/psn_trophies.py"
+      - "scripts/weather.py"
+      - "scripts/site/**"
+      - "README.md"
       - ".github/workflows/contributions.yml"
 
 permissions:
@@ -26,10 +34,44 @@ jobs:
       - name: Generate graph
         run: python scripts/contrib_graph.py ${{ github.repository_owner }} assets/contributions.svg
 
+      - name: Generate XP bar
+        run: python scripts/xp_bar.py ${{ github.repository_owner }} assets/xp.svg
+
+      - name: Generate statistics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/stats.py ${{ github.repository_owner }} assets/stats.svg
+
+      # Derniers jeux PlayStation : ajoute ton jeton NPSSO dans
+      # Settings > Secrets and variables > Actions > New repository secret, nom : PSN_NPSSO
+      # (le jeton expire au bout d'environ 60 jours : il suffit de remplacer le secret)
+      - name: Generate PlayStation games
+        continue-on-error: true
+        env:
+          PSN_NPSSO: ${{ secrets.PSN_NPSSO }}
+        run: |
+          pip install --quiet psnawp
+          python scripts/psn_games.py assets/psn.svg
+          python scripts/psn_trophies.py assets/psn_trophies.svg
+
+      - name: Generate weather
+        continue-on-error: true
+        run: python scripts/weather.py assets/meteo.svg
+
+      - name: Generate last transmissions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/transmissions.py ${{ github.repository_owner }} assets/transmissions.svg
+
+      - name: Build interactive page (GitHub Pages)
+        run: |
+          pip install --quiet markdown
+          python scripts/site/build_site.py
+
       - name: Commit & push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add assets/contributions.svg
-          git diff --cached --quiet || git commit -m "chore: update contributions graph"
+          git add assets/contributions.svg assets/xp.svg assets/stats.svg assets/psn.svg assets/psn_trophies.svg assets/meteo.svg assets/transmissions.svg docs/index.html
+          git diff --cached --quiet || git commit -m "chore: update profile data (graph, XP, stats, PSN, weather, transmissions, site)"
           git push

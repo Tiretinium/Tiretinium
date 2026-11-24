@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
+  <defs>
+    <radialGradient id="glass" cx=".5" cy=".5" r=".75">
+      <stop offset="0" stop-color="#0b2414"/><stop offset=".7" stop-color="#06100a"/><stop offset="1" stop-color="#020604"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity=".35"/>
+    </pattern>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3dff86" stop-opacity="0"/><stop offset=".5" stop-color="#3dff86" stop-opacity=".07"/><stop offset="1" stop-color="#3dff86" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      text { font-family: 'Courier New', 'DejaVu Sans Mono', Menlo, Consolas, monospace; fill: #3dff86; }
+      .dim { fill: #2fb866; }
+      .b { font-weight: 700; }
+      .flick { animation: flick 6s infinite; }
+      @keyframes flick { 0%,100% {opacity:1} 47% {opacity:1} 48% {opacity:.82} 49% {opacity:1} 72% {opacity:.93} 73% {opacity:1} }
+      .roll { animation: roll 5s linear infinite; }
+      @keyframes roll { from { transform: translateY(-120px) } to { transform: translateY(430px) } }
+      .blink { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0 } }
+    </style>
+    <clipPath id="scr"><rect x="20" y="20" width="1160" height="390" rx="22"/></clipPath>
+    <style>
+      .sel { opacity: 0; animation: sel 16.0s step-end infinite; }
+      @keyframes sel { 0% { opacity: 1 } 25.000% { opacity: 0 } 100% { opacity: 0 } }
+    </style>
+  </defs>
+  <rect width="1200" height="430" rx="16" fill="#151515"/>
+  
+  <rect x="20" y="20" width="1160" height="390" rx="22" fill="url(#glass)"/>
+  <g class="flick" filter="url(#glow)">
+    <text x="52" y="58" font-size="22" class="b" letter-spacing="3">QUÊTES</text>
+    <text x="1148" y="58" font-size="14" text-anchor="end" class="dim">JOURNAL DE L'HABITANT</text>
+    <line x1="52" y1="70" x2="1148" y2="70" stroke="#1d7a43"/>
+    <line x1="520" y1="96" x2="520" y2="380" stroke="#0c2a17"/>
+    <text x="64" y="140" font-size="18">Diplôme de l&#39;Abri</text><text x="470" y="140" font-size="12" text-anchor="end" class="dim" letter-spacing="2">PRINCIPALE</text><text x="64" y="180" font-size="18">Contrat chez Thales DMS</text><text x="470" y="180" font-size="12" text-anchor="end" class="dim" letter-spacing="2">PRINCIPALE</text><text x="64" y="220" font-size="18">Le terminal de l&#39;habitant</text><text x="470" y="220" font-size="12" text-anchor="end" class="dim" letter-spacing="2">ANNEXE</text><text x="64" y="260" font-size="18">Explorer les Terres désolées</text><text x="470" y="260" font-size="12" text-anchor="end" class="dim" letter-spacing="2">ANNEXE</text>
+    <g class="sel" style="animation-delay:0.0s"><rect x="52" y="116" width="430" height="34" fill="#3dff86"/><text x="64" y="140" font-size="18" class="b" style="fill:#06100a">Diplôme de l&#39;Abri</text><text x="470" y="140" font-size="12" text-anchor="end" style="fill:#06100a" letter-spacing="2">PRINCIPALE</text></g><g class="sel" style="animation-delay:4.0s"><rect x="52" y="156" width="430" height="34" fill="#3dff86"/><text x="64" y="180" font-size="18" class="b" style="fill:#06100a">Contrat chez Thales DMS</text><text x="470" y="180" font-size="12" text-anchor="end" style="fill:#06100a" letter-spacing="2">PRINCIPALE</text></g><g class="sel" style="animation-delay:8.0s"><rect x="52" y="196" width="430" height="34" fill="#3dff86"/><text x="64" y="220" font-size="18" class="b" style="fill:#06100a">Le terminal de l&#39;habitant</text><text x="470" y="220" font-size="12" text-anchor="end" style="fill:#06100a" letter-spacing="2">ANNEXE</text></g><g class="sel" style="animation-delay:12.0s"><rect x="52" y="236" width="430" height="34" fill="#3dff86"/><text x="64" y="260" font-size="18" class="b" style="fill:#06100a">Explorer les Terres désolées</text><text x="470" y="260" font-size="12" text-anchor="end" style="fill:#06100a" letter-spacing="2">ANNEXE</text></g>
+    <g class="sel" style="animation-delay:0.0s">
+        <text x="560" y="128" font-size="21" class="b">DIPLÔME DE L&#39;ABRI</text>
+        <text x="1148" y="128" font-size="14" text-anchor="end" class="dim">3/5 OBJECTIFS</text>
+        <rect x="560" y="161" width="16" height="16" fill="#3dff86" stroke="#3dff86"/><path d="M563,169 l4,4 l7,-8" stroke="#06100a" stroke-width="2.4" fill="none"/><text x="592" y="176" font-size="17" class="dim">Entrer en BUT Informatique à l&#39;IUT Nice Côte d&#39;Azur</text><rect x="560" y="199" width="16" height="16" fill="#3dff86" stroke="#3dff86"/><path d="M563,207 l4,4 l7,-8" stroke="#06100a" stroke-width="2.4" fill="none"/><text x="592" y="214" font-size="17" class="dim">Valider la 1re année</text><rect x="560" y="237" width="16" height="16" fill="#3dff86" stroke="#3dff86"/><path d="M563,245 l4,4 l7,-8" stroke="#06100a" stroke-width="2.4" fill="none"/><text x="592" y="252" font-size="17" class="dim">Valider la 2e année</text><rect x="560" y="275" width="16" height="16" fill="none" stroke="#3dff86"/><text x="592" y="290" font-size="17">Réussir la 3e année</text><rect x="560" y="313" width="16" height="16" fill="none" stroke="#3dff86"/><text x="592" y="328" font-size="17">Obtenir le BUT Informatique (2027)</text></g><g class="sel" style="animation-delay:4.0s">
+        <text x="560" y="128" font-size="21" class="b">CONTRAT CHEZ THALES DMS</text>
+        <text x="1148" y="128" font-size="14" text-anchor="end" class="dim">2/4 OBJECTIFS</text>
+        <rect x="560" y="161" width="16" height="16" fill="#3dff86" stroke="#3dff86"/><path d="M563,169 l4,4 l7,-8" stroke="#06100a" stroke-width="2.4" fill="none"/><text x="592" y="176" font-size="17" class="dim">Décrocher une alternance</text><rect x="560" y="199" width="16" height="16" fill="#3dff86" stroke="#3dff86"/><path d="M563,207 l4,4 l7,-8" stroke="#06100a" stroke-width="2.4" fill="none"/><text x="592" y="214" font-size="17" class="dim">Rejoindre l&#39;équipe chez Thales DMS</text><rect x="560" y="237" width="16" height="16" fill="none" stroke="#3dff86"/><text x="592" y="252" font-size="17">Livrer des projets en entreprise</text><rect x="560" y="275" width="16" height="16" fill="none" stroke="#3dff86"/><text x="592" y="290" font-size="17">Terminer l&#39;alternance</text></g><g class="sel" style="animation-delay:8.0s">
+        <text x="560" y="128" font-size="21" class="b">LE TERMINAL DE L&#39;HABITANT</text>
+        <text x="1148" y="128" font-size="14" text-anchor="end" class="dim">3/3 OBJECTIFS</text>
+        <rect x="560" y="161" width="16" height="16" fill="#3dff86" stroke="#3dff86"/><path d="M563,169 l4,4 l7,-8" stroke="#06100a" stroke-width="2.4" fill="none"/><text x="592" y="176" font-size="17" class="dim">Créer le profil GitHub</text><rect x="560" y="199" width="16" height="16" fill="#3dff86" stroke="#3dff86"/><path d="M563,207 l4,4 l7,-8" stroke="#06100a" stroke-width="2.4" fill="none"/><text x="592" y="214" font-size="17" class="dim">Installer le terminal de l&#39;Abri 27</text><rect x="560" y="237" width="16" height="16" fill="#3dff86" stroke="#3dff86"/><path d="M563,245 l4,4 l7,-8" stroke="#06100a" stroke-width="2.4" fill="none"/><text x="592" y="252" font-size="17" class="dim">Archiver mes projets sur holotapes</text></g><g class="sel" style="animation-delay:12.0s">
+        <text x="560" y="128" font-size="21" class="b">EXPLORER LES TERRES DÉSOLÉES</text>
+        <text x="1148" y="128" font-size="14" text-anchor="end" class="dim">1/3 OBJECTIFS</text>
+        <rect x="560" y="161" width="16" height="16" fill="#3dff86" stroke="#3dff86"/><path d="M563,169 l4,4 l7,-8" stroke="#06100a" stroke-width="2.4" fill="none"/><text x="592" y="176" font-size="17" class="dim">Maîtriser Docker</text><rect x="560" y="199" width="16" height="16" fill="none" stroke="#3dff86"/><text x="592" y="214" font-size="17">Déployer sur Kubernetes</text><rect x="560" y="237" width="16" height="16" fill="none" stroke="#3dff86"/><text x="592" y="252" font-size="17">Choisir la suite après le BUT</text></g>
+  </g>
+  
+  <g clip-path="url(#scr)" pointer-events="none">
+    <rect class="roll" x="20" y="0" width="1160" height="120" fill="url(#band)"/>
+    <rect x="20" y="20" width="1160" height="390" fill="url(#scan)"/>
+  </g>
+  <rect x="20" y="20" width="1160" height="390" rx="22" fill="none" stroke="#1d7a43" stroke-opacity=".5" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <radialGradient id="glass" cx=".5" cy=".5" r=".75">
+      <stop offset="0" stop-color="#0b2414"/><stop offset=".7" stop-color="#06100a"/><stop offset="1" stop-color="#020604"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity=".35"/>
+    </pattern>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3dff86" stop-opacity="0"/><stop offset=".5" stop-color="#3dff86" stop-opacity=".07"/><stop offset="1" stop-color="#3dff86" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      text { font-family: 'Courier New', 'DejaVu Sans Mono', Menlo, Consolas, monospace; fill: #3dff86; }
+      .dim { fill: #2fb866; }
+      .b { font-weight: 700; }
+      .flick { animation: flick 6s infinite; }
+      @keyframes flick { 0%,100% {opacity:1} 47% {opacity:1} 48% {opacity:.82} 49% {opacity:1} 72% {opacity:.93} 73% {opacity:1} }
+      .roll { animation: roll 5s linear infinite; }
+      @keyframes roll { from { transform: translateY(-120px) } to { transform: translateY(400px) } }
+      .blink { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0 } }
+    </style>
+    <clipPath id="scr"><rect x="20" y="20" width="1160" height="360" rx="26"/></clipPath>
+    <clipPath id="l0"><rect x="70" y="63" height="29" width="0"><animate attributeName="width" begin="4.62s" dur="0.49s" values="0.0;11.4;22.8;34.2;45.6;57.0;68.4;79.8;91.2;102.6;114.0;125.4;136.8;148.2;159.6;171.0;182.4;193.8;205.2;216.6;228.0;239.4;250.8;262.2;273.6;285.0;296.4;307.8;319.2;330.6;342.0;353.4;364.8;376.2;387.6;399.0;410.4;421.8;433.2;444.6;456.0;467.4" keyTimes="0.0000;0.0244;0.0488;0.0732;0.0976;0.1220;0.1463;0.1707;0.1951;0.2195;0.2439;0.2683;0.2927;0.3171;0.3415;0.3659;0.3902;0.4146;0.4390;0.4634;0.4878;0.5122;0.5366;0.5610;0.5854;0.6098;0.6341;0.6585;0.6829;0.7073;0.7317;0.7561;0.7805;0.8049;0.8293;0.8537;0.8780;0.9024;0.9268;0.9512;0.9756;1.0000" calcMode="discrete" fill="freeze"/></rect></clipPath><clipPath id="l1"><rect x="70" y="92" height="29" width="0"><animate attributeName="width" begin="5.46s" dur="0.26s" values="0.0;11.4;22.8;34.2;45.6;57.0;68.4;79.8;91.2;102.6;114.0;125.4;136.8;148.2;159.6;171.0;182.4;193.8;205.2;216.6;228.0;239.4;250.8" keyTimes="0.0000;0.0455;0.0909;0.1364;0.1818;0.2273;0.2727;0.3182;0.3636;0.4091;0.4545;0.5000;0.5455;0.5909;0.6364;0.6818;0.7273;0.7727;0.8182;0.8636;0.9091;0.9545;1.0000" calcMode="discrete" fill="freeze"/></rect></clipPath><clipPath id="l2"><rect x="70" y="121" height="29" width="0"><animate attributeName="width" begin="5.93s" dur="0.80s" values="0.0;11.4;22.8;34.2;45.6;57.0;68.4;79.8;91.2;102.6;114.0" keyTimes="0.0000;0.1000;0.2000;0.3000;0.4000;0.5000;0.6000;0.7000;0.8000;0.9000;1.0000" calcMode="discrete" fill="freeze"/></rect></clipPath><clipPath id="l3"><rect x="70" y="150" height="29" width="0"><animate attributeName="width" begin="7.03s" dur="0.59s" values="0.0;11.4;22.8;34.2;45.6;57.0;68.4;79.8;91.2;102.6;114.0;125.4;136.8;148.2;159.6;171.0;182.4;193.8;205.2;216.6;228.0;239.4;250.8;262.2;273.6;285.0;296.4;307.8;319.2;330.6;342.0;353.4;364.8;376.2;387.6;399.0;410.4;421.8;433.2;444.6;456.0;467.4;478.8;490.2;501.6;513.0;524.4;535.8;547.2;558.6" keyTimes="0.0000;0.0204;0.0408;0.0612;0.0816;0.1020;0.1224;0.1429;0.1633;0.1837;0.2041;0.2245;0.2449;0.2653;0.2857;0.3061;0.3265;0.3469;0.3673;0.3878;0.4082;0.4286;0.4490;0.4694;0.4898;0.5102;0.5306;0.5510;0.5714;0.5918;0.6122;0.6327;0.6531;0.6735;0.6939;0.7143;0.7347;0.7551;0.7755;0.7959;0.8163;0.8367;0.8571;0.8776;0.8980;0.9184;0.9388;0.9592;0.9796;1.0000" calcMode="discrete" fill="freeze"/></rect></clipPath><clipPath id="l5"><rect x="70" y="208" height="29" width="0"><animate attributeName="width" begin="8.21s" dur="0.30s" values="0.0;11.4;22.8;34.2;45.6;57.0;68.4;79.8;91.2;102.6;114.0;125.4;136.8;148.2;159.6;171.0;182.4;193.8;205.2;216.6;228.0;239.4;250.8;262.2;273.6;285.0" keyTimes="0.0000;0.0400;0.0800;0.1200;0.1600;0.2000;0.2400;0.2800;0.3200;0.3600;0.4000;0.4400;0.4800;0.5200;0.5600;0.6000;0.6400;0.6800;0.7200;0.7600;0.8000;0.8400;0.8800;0.9200;0.9600;1.0000" calcMode="discrete" fill="freeze"/></rect></clipPath><clipPath id="l6"><rect x="70" y="237" height="29" width="0"><animate attributeName="width" begin="8.66s" dur="0.49s" values="0.0;11.4;22.8;34.2;45.6;57.0;68.4;79.8;91.2;102.6;114.0;125.4;136.8;148.2;159.6;171.0;182.4;193.8;205.2;216.6;228.0;239.4;250.8;262.2;273.6;285.0;296.4;307.8;319.2;330.6;342.0;353.4;364.8;376.2;387.6;399.0;410.4;421.8;433.2;444.6;456.0;467.4" keyTimes="0.0000;0.0244;0.0488;0.0732;0.0976;0.1220;0.1463;0.1707;0.1951;0.2195;0.2439;0.2683;0.2927;0.3171;0.3415;0.3659;0.3902;0.4146;0.4390;0.4634;0.4878;0.5122;0.5366;0.5610;0.5854;0.6098;0.6341;0.6585;0.6829;0.7073;0.7317;0.7561;0.7805;0.8049;0.8293;0.8537;0.8780;0.9024;0.9268;0.9512;0.9756;1.0000" calcMode="discrete" fill="freeze"/></rect></clipPath><clipPath id="l7"><rect x="70" y="266" height="29" width="0"><animate attributeName="width" begin="9.31s" dur="0.48s" values="0.0;11.4;22.8;34.2;45.6;57.0;68.4;79.8;91.2;102.6;114.0;125.4;136.8;148.2;159.6;171.0;182.4;193.8;205.2;216.6;228.0;239.4;250.8;262.2;273.6;285.0;296.4;307.8;319.2;330.6;342.0;353.4;364.8;376.2;387.6;399.0;410.4;421.8;433.2;444.6;456.0" keyTimes="0.0000;0.0250;0.0500;0.0750;0.1000;0.1250;0.1500;0.1750;0.2000;0.2250;0.2500;0.2750;0.3000;0.3250;0.3500;0.3750;0.4000;0.4250;0.4500;0.4750;0.5000;0.5250;0.5500;0.5750;0.6000;0.6250;0.6500;0.6750;0.7000;0.7250;0.7500;0.7750;0.8000;0.8250;0.8500;0.8750;0.9000;0.9250;0.9500;0.9750;1.0000" calcMode="discrete" fill="freeze"/></rect></clipPath><clipPath id="l8"><rect x="70" y="295" height="29" width="0"><animate attributeName="width" begin="9.94s" dur="0.53s" values="0.0;11.4;22.8;34.2;45.6;57.0;68.4;79.8;91.2;102.6;114.0;125.4;136.8;148.2;159.6;171.0;182.4;193.8;205.2;216.6;228.0;239.4;250.8;262.2;273.6;285.0;296.4;307.8;319.2;330.6;342.0;353.4;364.8;376.2;387.6;399.0;410.4;421.8;433.2;444.6;456.0;467.4;478.8;490.2;501.6" keyTimes="0.0000;0.0227;0.0455;0.0682;0.0909;0.1136;0.1364;0.1591;0.1818;0.2045;0.2273;0.2500;0.2727;0.2955;0.3182;0.3409;0.3636;0.3864;0.4091;0.4318;0.4545;0.4773;0.5000;0.5227;0.5455;0.5682;0.5909;0.6136;0.6364;0.6591;0.6818;0.7045;0.7273;0.7500;0.7727;0.7955;0.8182;0.8409;0.8636;0.8864;0.9091;0.9318;0.9545;0.9773;1.0000" calcMode="discrete" fill="freeze"/></rect></clipPath><clipPath id="l9"><rect x="70" y="324" height="29" width="0"><animate attributeName="width" begin="10.61s" dur="0.50s" values="0.0;11.4;22.8;34.2;45.6;57.0;68.4;79.8;91.2;102.6;114.0;125.4;136.8;148.2;159.6;171.0;182.4;193.8;205.2;216.6;228.0;239.4;250.8;262.2;273.6;285.0;296.4;307.8;319.2;330.6;342.0;353.4;364.8;376.2;387.6;399.0;410.4;421.8;433.2;444.6;456.0;467.4;478.8" keyTimes="0.0000;0.0238;0.0476;0.0714;0.0952;0.1190;0.1429;0.1667;0.1905;0.2143;0.2381;0.2619;0.2857;0.3095;0.3333;0.3571;0.3810;0.4048;0.4286;0.4524;0.4762;0.5000;0.5238;0.5476;0.5714;0.5952;0.6190;0.6429;0.6667;0.6905;0.7143;0.7381;0.7619;0.7857;0.8095;0.8333;0.8571;0.8810;0.9048;0.9286;0.9524;0.9762;1.0000" calcMode="discrete" fill="freeze"/></rect></clipPath>
+  </defs>
+  <rect width="1200" height="400" rx="18" fill="#151515"/>
+  
+  <rect x="20" y="20" width="1160" height="360" rx="26" fill="url(#glass)"/>
+  <g class="flick" filter="url(#glow)" opacity="0">
+    <animate attributeName="opacity" values="0;1.6;1" dur=".35s" begin="4.22s" fill="freeze"/>
+    <text x="1148" y="52" font-size="13" text-anchor="end" class="dim">TIRET-OS v3.0  //  ABRI 27</text>
+    <text x="72" y="82" font-size="19" class="b" clip-path="url(#l0)" xml:space="preserve">TIRETINIUM INDUSTRIES · TERMINAL SÉCURISÉ</text><text x="72" y="111" font-size="19" clip-path="url(#l1)" xml:space="preserve">ENTREZ LE MOT DE PASSE</text><text x="72" y="140" font-size="19" clip-path="url(#l2)" xml:space="preserve">&gt; ********</text><text x="72" y="169" font-size="19" class="b" clip-path="url(#l3)" xml:space="preserve">ACCÈS AUTORISÉ. BIENVENUE, HABITANT DE L&#39;ABRI 27.</text><text x="72" y="227" font-size="19" clip-path="url(#l5)" xml:space="preserve">&gt; HABITANT ... Tiretinium</text><text x="72" y="256" font-size="19" clip-path="url(#l6)" xml:space="preserve">&gt; CLASSE ..... BUT Informatique, 3e année</text><text x="72" y="285" font-size="19" clip-path="url(#l7)" xml:space="preserve">&gt; AFFECTÉ .... Alternant chez Thales DMS</text><text x="72" y="314" font-size="19" clip-path="url(#l8)" xml:space="preserve">&gt; SECTEUR .... Sophia Antipolis, Côte d&#39;Azur</text><text x="72" y="343" font-size="19" clip-path="url(#l9)" xml:space="preserve">&gt; MISSION .... Coder. Apprendre. Survivre.</text>
+    <g class="blink"><rect x="556.8" y="327" width="11.4" height="19" fill="#3dff86" opacity="0"><set attributeName="opacity" to="1" begin="11.12s" fill="freeze"/></rect></g>
+
+    <!-- porte d'abri : engrenage qui tourne -->
+    <g opacity=".95">
+      <circle cx="985" cy="196" r="132" fill="none" stroke="#1d7a43" stroke-width="1" stroke-dasharray="3 9">
+        <animateTransform attributeName="transform" type="rotate" from="360 985 196" to="0 985 196" dur="40s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M1089.0,196.0 L1102.3,209.2 L1100.0,222.3 L1083.2,230.3 L1078.7,241.1 L1084.9,258.8 L1077.3,269.6 L1058.5,269.5 L1049.8,277.3 L1047.8,295.9 L1036.2,302.3 L1019.3,294.2 L1008.1,297.4 L998.2,313.3 L985.0,314.0 L973.4,299.3 L961.9,297.4 L946.0,307.4 L933.8,302.3 L929.7,284.1 L920.2,277.3 L901.6,279.4 L892.7,269.6 L896.9,251.3 L891.3,241.1 L873.6,235.0 L870.0,222.3 L881.7,207.6 L881.0,196.0 L867.7,182.8 L870.0,169.7 L886.8,161.7 L891.3,150.9 L885.1,133.2 L892.7,122.4 L911.5,122.5 L920.2,114.7 L922.2,96.1 L933.8,89.7 L950.7,97.8 L961.9,94.6 L971.8,78.7 L985.0,78.0 L996.6,92.7 L1008.1,94.6 L1024.0,84.6 L1036.2,89.7 L1040.3,107.9 L1049.8,114.7 L1068.4,112.6 L1077.3,122.4 L1073.1,140.7 L1078.7,150.9 L1096.4,157.0 L1100.0,169.7 L1088.3,184.4 Z" fill="#0c2a17" stroke="#3dff86" stroke-width="2">
+        <animateTransform attributeName="transform" type="rotate" from="0 985 196" to="360 985 196" dur="24s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="985" cy="196" r="88" fill="#06100a" stroke="#3dff86" stroke-width="1.5"/>
+      <circle cx="985" cy="196" r="78" fill="none" stroke="#1d7a43" stroke-width="1"/>
+      <text x="985" y="202" font-size="64" text-anchor="middle" dominant-baseline="middle" class="b">27</text>
+      <text x="985" y="348" font-size="14" text-anchor="middle" class="dim" letter-spacing="6">ABRI 27</text>
+    </g>
+  </g>
+  <g clip-path="url(#scr)"><g>
+      <rect x="20" y="20" width="1160" height="360" fill="#020604"/>
+      <rect x="600.0" y="199.0" width="0" height="2" fill="#d9ffe6">
+        <animate attributeName="x" from="600.0" to="20" dur=".45s" fill="freeze"/>
+        <animate attributeName="width" from="0" to="1160" dur=".45s" fill="freeze"/>
+        <animate attributeName="y" from="199.0" to="20" begin=".45s" dur=".4s" fill="freeze"/>
+        <animate attributeName="height" from="2" to="360" begin=".45s" dur=".4s" fill="freeze"/>
+        <animate attributeName="opacity" from="1" to="0" begin=".45s" dur=".45s" fill="freeze"/>
+      </rect>
+      <g filter="url(#glow)"><text x="64" y="78" font-size="18" class="b" opacity="0" xml:space="preserve">TIRET-OS BIOS v3.0 · TIRETINIUM INDUSTRIES<set attributeName="opacity" to="1" begin="1.00s" fill="freeze"/></text><text x="64" y="108" font-size="18" opacity="0" xml:space="preserve">Test mémoire ........................ 65536 Ko  OK<set attributeName="opacity" to="1" begin="1.28s" fill="freeze"/></text><text x="64" y="138" font-size="18" opacity="0" xml:space="preserve">Détection du processeur ............. OK<set attributeName="opacity" to="1" begin="1.56s" fill="freeze"/></text><text x="64" y="168" font-size="18" opacity="0" xml:space="preserve">Montage du disque ABRI-27 ........... OK<set attributeName="opacity" to="1" begin="1.84s" fill="freeze"/></text><text x="64" y="198" font-size="18" opacity="0" xml:space="preserve">Synchronisation GitHub .............. OK<set attributeName="opacity" to="1" begin="2.12s" fill="freeze"/></text><text x="64" y="228" font-size="18" opacity="0" xml:space="preserve">Chargement du profil : Tiretinium<set attributeName="opacity" to="1" begin="2.40s" fill="freeze"/></text><text x="64" y="258" font-size="18" class="dim" opacity="0" xml:space="preserve">  &gt; S.P.E.C.I.A.L. · inventaire · quêtes · carte<set attributeName="opacity" to="1" begin="2.68s" fill="freeze"/></text><text x="64" y="288" font-size="18" opacity="0" xml:space="preserve"><set attributeName="opacity" to="1" begin="2.96s" fill="freeze"/></text><text x="64" y="318" font-size="18" class="b" opacity="0" xml:space="preserve">DÉMARRAGE DU TERMINAL...<set attributeName="opacity" to="1" begin="3.24s" fill="freeze"/></text></g>
+      <set attributeName="opacity" to="0" begin="4.22s" fill="freeze"/>
+    </g></g>
+  
+  <g clip-path="url(#scr)" pointer-events="none">
+    <rect class="roll" x="20" y="0" width="1160" height="120" fill="url(#band)"/>
+    <rect x="20" y="20" width="1160" height="360" fill="url(#scan)"/>
+  </g>
+  <rect x="20" y="20" width="1160" height="360" rx="26" fill="none" stroke="#1d7a43" stroke-opacity=".5" stroke-width="1.5"/>
+</svg>

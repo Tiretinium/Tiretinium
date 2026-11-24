@@ -11,11 +11,11 @@ from datetime import date
 USER = sys.argv[1]
 OUT = sys.argv[2]
 
-BG = "#151515"
-BORDER = "#2b2b2b"
-TEXT = "#9e9e9e"
-TITLE = "#e6e6e6"
-LEVELS = ["#222222", "#0e4429", "#006d32", "#26a641", "#39d353"]
+BG = "#06100a"
+BORDER = "#1d7a43"
+TEXT = "#2fb866"
+TITLE = "#3dff86"
+LEVELS = ["#0c2a17", "#145c32", "#1d9a52", "#2fd06c", "#3dff86"]
 MONTHS = ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"]
 
 CELL, GAP = 12, 3
@@ -71,7 +71,7 @@ legend = "".join(
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
   <style>
-    text {{ font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; fill: {TEXT}; }}
+    text {{ font-family: 'Courier New', 'DejaVu Sans Mono', Menlo, monospace; font-size: 11px; fill: {TEXT}; }}
     .t {{ font-size: 15px; font-weight: 600; fill: {TITLE}; }}
   </style>
   <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="10" fill="{BG}" stroke="{BORDER}"/>
