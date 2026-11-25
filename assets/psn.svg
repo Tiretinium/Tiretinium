@@ -19,9 +19,9 @@
       <rect x="520" y="105" width="52" height="22" rx="3" fill="none" stroke="#1d7a43"/>
       <text x="546" y="121" font-size="13" text-anchor="middle" class="b">PS</text>
       <rect x="600" y="109" width="0" height="12" fill="#2fb866">
-        <animate attributeName="width" from="0" to="126.4" begin="0.30s" dur=".6s" fill="freeze"/></rect>
-      <text x="832" y="122" font-size="15">28 h</text>
-      <text x="1148" y="122" font-size="14" text-anchor="end" class="dim">24/11/2026</text></g><g opacity="0"><set attributeName="opacity" to="1" begin="0.55s" fill="freeze"/>
+        <animate attributeName="width" from="0" to="149.2" begin="0.30s" dur=".6s" fill="freeze"/></rect>
+      <text x="832" y="122" font-size="15">33 h</text>
+      <text x="1148" y="122" font-size="14" text-anchor="end" class="dim">25/11/2026</text></g><g opacity="0"><set attributeName="opacity" to="1" begin="0.55s" fill="freeze"/>
       <rect x="56" y="148" width="26" height="22" rx="3" fill="none" stroke="#3dff86" stroke-width="1.6"/>
       <circle cx="69" cy="159" r="5" fill="none" stroke="#3dff86" stroke-width="1.4"/>
       <text x="100" y="166" font-size="17">Crunchyroll</text>
